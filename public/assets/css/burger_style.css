@@ -1,0 +1,39 @@
+body{
+    background-color: beige;
+}
+#hamburgerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    background-color: beige;
+}
+#example{
+    color:blue;
+}
+#burgerBox{
+    background-color: beige;
+}
+#submitBox{
+    background-color: brown;
+}
+#submitButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    background-color: green;
+    border:none;
+}
+#userInputBurger{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#burgerSubmitInfo{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+
+}

@@ -1,8 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container" id = "burgerBox">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" type="text/css" /> -->
+    <title>Eat-Da-Burger App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/assets/css/burger_style.css" type="text/css" />
+	
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <!-- <script src="/assets/js/burger.js"></script> -->
+</head>
+
+<body>
+   
+    <div class="container" id = "burgerBox">
         <div class="row">
           <div class="col">
-            <img id = "hamburgerImage" src="/assets/img/burgerImage.png" alt="hamburger">
+            <img id = "hamburgerImage" src="./public/assets/img/burgerImage.png" alt="hamburger">
 
           </div>
              </div>
@@ -10,11 +26,7 @@
     <div class="container">
                 <div class="row">
           <div class="col">
-         <ul>
-  {{#each burgers}}
-   {{burger:burger_name}}
-  {{/each}}
-</ul>
+            1 of 3
           </div>
           <div class="col">
             2 of 3
@@ -26,7 +38,7 @@
         </div>
    </div>
    <div class="container" id= "submitBox">
-    <form class="create-form">
+    <form>
         
         <div class="form-group">
           <label for="userInput"></label>
@@ -42,5 +54,6 @@
       </div>
 
    </div>
+</body>
 
-
+</html>
