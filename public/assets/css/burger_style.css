@@ -1,11 +1,18 @@
 body{
     background-color: beige;
 }
+#header{
+    color: brown;
+    font-weight: Bolder;
+    font-size: 200%;
+    text-align: center;
+    margin-left: -3%;
+}
 #hamburgerImage{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 20%;
     background-color: beige;
 }
 #example{
@@ -36,4 +43,12 @@ body{
     color: white;
     font-weight: bolder;
 
+}
+.burgerTitles{
+    color: brown;
+    font-weight: bolder;
+    font-size: 150%;
+}
+.hamburgerImage{
+    background-color: white;
 }

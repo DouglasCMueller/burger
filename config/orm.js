@@ -87,7 +87,7 @@ var orm = {
 
       cb(result);
     });
-  },
+  }
   
 };
 
