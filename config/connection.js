@@ -1,9 +1,11 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 let connection;
-if (process.env.CLEARDB_DATABASE_URL='mysql://b522b39542d745:d39fc5c0@us-cdbr-iron-east-04.cleardb.net/heroku_6522e6b8ebb96d0?reconnect=true') {
-  connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL='mysql://b522b39542d745:d39fc5c0@us-cdbr-iron-east-04.cleardb.net/heroku_6522e6b8ebb96d0?reconnect=true');
+if (process.env.CLEARDB_DATABASE_URL) {
+  console.log('CONNECTED TO EXTERNAL DB')
+  connection = mysql.createConnection('mysql://b522b39542d745:d39fc5c0@us-cdbr-iron-east-04.cleardb.net/heroku_6522e6b8ebb96d0?reconnect=true');
 } else {
+  console.log('CONNECTED TO LOCAL DB')
   connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
