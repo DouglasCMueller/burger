@@ -33,6 +33,7 @@ console.log(newDevoured)
 var newDevouredState ={
   devoured: true
 };
+
   console.log(newDevouredState)
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
